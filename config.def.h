@@ -16,7 +16,6 @@ static const char *fonts[]              = {
     "FiraCode Nerd Font:size=12",
     "WenQuanYi Micro Hei:size=12",
 };
-//static const char dmenufont[]           = "monospace:size=14";
 static const char dmenufont[]           = "FiraCode Nerd Font:size=14";
 static const char col_gray1[]           = "#222222";
 static const char col_gray2[]           = "#444444";
@@ -53,8 +52,8 @@ static const Rule rules[] = {
      */
     /* class          instance        title       tags mask     isfloating   monitor */
     //{ "term",         "autostart",    NULL,       1,            0,           -1 },
-    //{ "Google-chrome",NULL,           NULL,       1 << 1,       0,           -1 },
-    { "code-oss",     NULL,           NULL,       1 << 2,       0,           -1 },
+    { "chromium",     NULL,           NULL,       1 << 1,       0,           -1 },
+    { "code",         NULL,           NULL,       1 << 2,       0,           -1 },
     //{ NULL,           "libreoffice",  NULL,       1 << 3,       0,           -1 },
     //{ "zoom",         NULL,           NULL,       1 << 4,       0,           -1 },
     //{ "Virt-viewer",  NULL,           NULL,       1 << 5,       0,           -1 },
@@ -108,21 +107,21 @@ static unsigned int ncmode = 1;
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dwmcmd", "launch", NULL };
-static const char *termcmd[]  = { "alacritty", NULL };
-static const char *volupcmd[]  = { "dwmcmd", "volume", "up", NULL };
-static const char *voldowncmd[]  = { "dwmcmd", "volume", "down", NULL };
-static const char *volmutecmd[]  = { "dwmcmd", "volume", "toggle", NULL };
-static const char *toggletrayercmd[]  = { "dwmcmd", "trayer", NULL };
-static const char *mednextcmd[]  = { "dwmcmd", "music", "next", NULL };
-static const char *medprevcmd[]  = { "dwmcmd", "music", "prev", NULL };
-static const char *medplaycmd[]  = { "dwmcmd", "music", "toggle", NULL };
-static const char *togglescreenkeycmd[]  = { "dwmcmd", "scrkey", NULL };
-static const char *lockcmd[]  = { "loginctl", "lock-session", NULL };
-static const char *capturecmd[]  = { "flameshot", "gui", NULL };
-static const char *dictcmd[]  = { "dwmcmd", "dict", NULL };
-static const char *getaliascmd[]  = { "dwmcmd", "input", "Alias:", NULL };
-static const char *bookmarkcmd[]  = { "dwmcmd", "bookmark", NULL };
+static const char *dmenucmd[]           = { "dwmcmd", "launch", NULL };
+static const char *termcmd[]            = { "alacritty", NULL };
+static const char *volupcmd[]           = { "dwmcmd", "volume", "up", NULL };
+static const char *voldowncmd[]         = { "dwmcmd", "volume", "down", NULL };
+static const char *volmutecmd[]         = { "dwmcmd", "volume", "toggle", NULL };
+static const char *toggletrayercmd[]    = { "dwmcmd", "trayer", NULL };
+static const char *mednextcmd[]         = { "dwmcmd", "music", "next", NULL };
+static const char *medprevcmd[]         = { "dwmcmd", "music", "prev", NULL };
+static const char *medplaycmd[]         = { "dwmcmd", "music", "toggle", NULL };
+static const char *togglescreenkeycmd[] = { "dwmcmd", "scrkey", NULL };
+static const char *lockcmd[]            = { "loginctl", "lock-session", NULL };
+static const char *capturecmd[]         = { "flameshot", "gui", NULL };
+static const char *dictcmd[]            = { "dwmcmd", "dict", NULL };
+static const char *getaliascmd[]        = { "dwmcmd", "input", "Alias:", NULL };
+static const char *bookmarkcmd[]        = { "dwmcmd", "bookmark", NULL };
 
 static Key keys[] = {
     /* modifier                     key                         function        argument */

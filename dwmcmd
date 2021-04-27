@@ -42,7 +42,7 @@ case $1 in
         dmenu_run $DMENU_DEFAULT_OPTS -p 'Run'
         ;;
     launch)
-        dmenu_launcher
+        rofi -show run
         ;;
     dict)
         d "$(xsel -o)"
