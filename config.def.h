@@ -52,15 +52,15 @@ static const Rule rules[] = {
      */
     /* class          instance        title       tags mask     isfloating   monitor */
     //{ "term",         "autostart",    NULL,       1,            0,           -1 },
-    { "chromium",     NULL,           NULL,       1 << 1,       0,           -1 },
-    { "code",         NULL,           NULL,       1 << 2,       0,           -1 },
+    { "Microsoft-edge", NULL,           NULL,       1 << 1,       0,           -1 },
+    { "Code",           NULL,           NULL,       1 << 2,       0,           -1 },
     //{ NULL,           "libreoffice",  NULL,       1 << 3,       0,           -1 },
     //{ "zoom",         NULL,           NULL,       1 << 4,       0,           -1 },
     //{ "Virt-viewer",  NULL,           NULL,       1 << 5,       0,           -1 },
-    //{ "Gimp",         NULL,           NULL,       1 << 6,       0,           -1 },
+    { "Gimp",           NULL,           NULL,       1 << 6,       0,           -1 },
     //{ "DBeaver",      NULL,           NULL,       1 << 7,       0,           -1 },
-    { "KeePassXC",    NULL,           NULL,       1 << 8,       0,           -1 },
-    { "trayer",       NULL,           NULL,       0,            1,           -1 },
+    { "KeePassXC",      NULL,           NULL,       1 << 8,       0,           -1 },
+    { "trayer",         NULL,           NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */

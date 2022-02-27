@@ -42,7 +42,8 @@ case $1 in
         dmenu_run $DMENU_DEFAULT_OPTS -p 'Run'
         ;;
     launch)
-        rofi -show run
+        # rofi -show run
+        sh $HOME/software/rofi/1080p/bin/launcher_colorful
         ;;
     dict)
         d "$(xsel -o)"
